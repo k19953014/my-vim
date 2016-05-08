@@ -11,10 +11,12 @@
 3. link the vimrc to
 
         ln -s .vim/vimrc .vimrc
-        
+
 ## Notice
 
-1. bundle needs Plugin(type in the vim)
+1. remove `bundle`
+
+2. bundle needs Plugin(type in the vim)
 
         :PluginInstall
-      
+

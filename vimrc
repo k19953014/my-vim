@@ -29,7 +29,9 @@ Plugin 'scrooloose/nerdcommenter'
 Plugin 'kien/ctrlp.vim'
 Plugin 'tpope/vim-surround'
 Plugin 'vim-ruby/vim-ruby'
-Plugin 'Lokaltog/vim-powerline'
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
+"Plugin 'Lokaltog/vim-powerline'
 "Plugin 'MarcWeber/vim-addon-mw-utils'
 "Plugin 'tomtom/tlib_vim'
 "Plugin 'garbas/vim-snipmate'
@@ -52,6 +54,9 @@ colorscheme gruvbox
 
 :let mapleader=","
 let Powerline_symbols = 'fancy'
+:set mouse=nv
+set ic
+let g:airline_powerline_fonts=1
 
 inoremap ( ()<LEFT>
 inoremap [ []<LEFT>
@@ -117,3 +122,9 @@ set key=			                        " disable encryption
 set synmaxcol=128
 set viminfo=			                    " disable .viminfo file
 set ttyfast                           " send more chars while redrawin
+
+
+
+" airline
+
+let g:airline_theme='papercolor'

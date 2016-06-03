@@ -31,6 +31,11 @@ Plugin 'tpope/vim-surround'
 Plugin 'vim-ruby/vim-ruby'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
+Plugin 'tpope/vim-rails'
+Plugin 'MarcWeber/vim-addon-mw-utils'
+Plugin 'tomtom/tlib_vim'
+Plugin 'garbas/vim-snipmate'
+Plugin 'honza/vim-snippets'
 "Plugin 'Lokaltog/vim-powerline'
 "Plugin 'MarcWeber/vim-addon-mw-utils'
 "Plugin 'tomtom/tlib_vim'
@@ -58,13 +63,11 @@ let Powerline_symbols = 'fancy'
 set ic
 let g:airline_powerline_fonts=1
 
-inoremap ( ()<LEFT>
-inoremap [ []<LEFT>
-inoremap { {}<LEFT>
-inoremap " ""<LEFT>
-inoremap ' ''<LEFT>
-nnoremap <silent> <F2> :NERDTreeMirrorToggle<CR>
-"map <leader><leader> <plug>NERDCommenterComment
+noremap <silent> <F2> :NERDTreeMirrorToggle<CR>
+map <F3> <Plug>RailsTabFind
+map <PageUp> gT
+map <PageDown> gt
+"map <Leader>gf :vertical wincmd gf<CR>
 map <leader><leader> <plug>NERDCommenterToggle
 autocmd BufRead,BufNewFile *.rb map <F5> :% w !ruby<CR>
 autocmd BufWritePre * :%s/\s\+$//e
